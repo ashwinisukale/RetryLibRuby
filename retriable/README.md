@@ -25,7 +25,7 @@ Or install it yourself as:
 Retriable.attempts(:tries => 5) { puts "working..." }
 
 Retriable.attempts(on: StandardError) do
-  # your code here
+  ---your code here
 end
 
 
