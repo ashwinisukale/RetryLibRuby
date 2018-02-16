@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Retriable.attempts(:tries => 5) { puts "working..." }
+
+Retriable.attempts(on: StandardError) do
+  # your code here
+end
+
 
 ## Development
 
