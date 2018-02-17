@@ -1,8 +1,11 @@
+require_relative "retriable/config"
 require "retriable/version"
 
-module Retriable
 
-	def config
+module Retriable
+	module_function
+	
+  def config
     @config ||= Config.new
   end
 
